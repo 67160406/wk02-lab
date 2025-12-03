@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>ฟอร์มลงทะเบียน</h1>
+  </body>
+  <form action="/register" method="POST">
+    <fieldset>
+      <legend>ข้อมูลส่วนตัว</legend>
+
+      <!-- ชื่อจริง -->
+      <label for="fname">ชื่อจริง:</label>
+      <input type="text" id="fname" name="firstname" required />
+
+      <!-- นามสกุล -->
+      <label for="lname">นามสกุล:</label>
+      <input type="text" id="lname" name="lastname" required />
+      <br />
+
+      <!-- อีเมล -->
+      <label for="email">อีเมล:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- วันเกิด -->
+      <label for="dob">วันเกิด:</label>
+      <input type="date" id="dob" name="dob" />
+      <br />
+
+      <fieldset>
+        <!-- เพศ -->
+        <legend>เพศ:</legend>
+        <input type="radio" id="male" name="gender" value="ชาย" />
+        <label for="male">ชาย</label>
+        <input type="radio" id="female" name="gender" value="หญิง" />
+        <label for="female">หญิง</label>
+        <input type="radio" id="other" name="gender" value="อื่นๆ" />
+        <label for="other">อื่นๆ</label>
+      </fieldset>
+
+      <!-- ประเทศ -->
+      <label for="country">ประเทศ:</label>
+      <select id="country" name="country">
+        <option value="">--เลือกประเทศ--</option>
+        <option value="thailand">ไทย</option>
+        <option value="usa">สหรัฐอเมริกา</option>
+        <option value="japan">ญี่ปุ่น</option>
+        <option value="other">อื่นๆ</option>
+      </select>
+      <br />
+
+      <!-- ข้อมูลเพิ่มเติม -->
+      <label for="bio">ข้อมูลเพิ่มเติม:</label>
+      <br />
+
+      <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+      <br />
+
+      <!-- ยอมรับเงื่อนไข -->
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms">ฉันยอมรับเงื่อนไข</label>
+      <br />
+    </fieldset>
+
+    <!-- ปุ่มส่งและปุ่มยกเลิก -->
+    <button type="submit">ส่งข้อมูล</button>
+    <button type="reset">ยกเลิก</button>
+  </form>
+</html>

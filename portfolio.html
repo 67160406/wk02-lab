@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <picture>
+          <source srcset="profile-small.jpg" media="(max-width: 600px)" />
+          <source srcset="profile-large.jpg" media="(min-width: 601px)" />
+          <img src="profile-large.jpg" alt="รูปภาพตัวเอง" />
+        </picture>
+        <p>
+          สวัสดีค่ะ ฉันชื่อ นางสาวฟาร่า มิมมา เป็นนักศึกษาชั้นปีที่ 2
+          ของมหาวิทยาลัยบูรพา คณะวิทยาการสารสนเทศ
+          สาขาเทคโนโลยีสาระสนเศเพื่ออุตสาหกรรมดิจิทัล
+        </p>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <h2>ผลงานของฉัน</h2>
+
+        <figure>
+          <img src="project1.png" alt="โปรเจกต์ 1" />
+          <figcaption>โปรเจกต์เว็บร้านค้าออนไลน์ที่สร้างด้วย React</figcaption>
+        </figure>
+
+        <figure>
+          <img src="project2.png" alt="โปรเจกต์ 2" />
+          <figcaption>โปรเจกต์แอปจัดการงานด้วย Vue.js</figcaption>
+        </figure>
+
+        <figure>
+          <img src="project3.png" alt="โปรเจกต์ 3" />
+          <figcaption>โปรเจกต์บล็อกส่วนตัวที่พัฒนาด้วย WordPress</figcaption>
+        </figure>
+
+        <!-- Skills Table -->
+<h3>ทักษะของฉัน</h3>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ทักษะ</th>
+      <th>ระดับ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTML5</td>
+      <td>ดี</td>
+    </tr>
+    <tr>
+      <td>CSS3</td>
+      <td>ปานกลาง</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>ดี</td>
+    </tr>
+    <tr>
+      <td>React</td>
+      <td>ปานกลาง</td>
+    </tr>
+  </tbody>
+</table>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>ติดต่อฉัน</h2>
+        <form action="/send-message" method="POST">
+          <label for="name">ชื่อ:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+
+          <label for="message">ข้อความ:</label>
+          <br />
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <br />
+
+          <button type="submit">ส่งข้อความ</button>
+          <br />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
