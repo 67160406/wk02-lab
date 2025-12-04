@@ -4,23 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <meta name="description" content="Portfolio แสดงผลงานและข้อมูลส่วนตัว" />
+    <meta name="keywords" content="html5, web design" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- TODO: สร้าง header -->
     <header>
       <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Main -->
+    <!-- TODO: สร้าง main ที่มี -->
+    <!-- 1. About section -->
+    <!-- - หัวข้อ -->
+    <!-- - รูปภาพตัวเอง <img> -->
+    <!-- - ข้อมูลประกอบ -->
     <main>
       <!-- About Section -->
       <section id="about">
         <h2>เกี่ยวกับฉัน</h2>
+
         <picture>
-          <source srcset="cat.jpg" media="(max-width: 300px)" />
-          <source srcset="cat.jpg" media="(min-width: 301px)" />
-          <img src="cat.jpg" alt="รูปภาพตัวเอง" class="my-responsive-image" style="width: 20%;" />
+          <source srcset="image/cat.jpg" media="(max-width: 300px)" />
+          <source srcset="image/cat.jpg" media="(min-width: 301px)" />
+          <img src="image/cat.jpg" alt="รูปภาพตัวเอง" class="my-responsive-image" style="width: 20%;" />
         </picture>
+
         <p>
           สวัสดีค่ะ ฉันชื่อ นางสาวฟาร่า มิมมา เป็นนักศึกษาชั้นปีที่ 2
           ของมหาวิทยาลัยบูรพา คณะวิทยาการสารสนเทศ
@@ -30,54 +46,55 @@
 
       <!-- Skills Table -->
       <h3>ทักษะของฉัน</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-  <thead>
-    <tr>
-      <th>ทักษะ</th>
-      <th>ระดับ</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HTML5</td>
-      <td>ดี</td>
-    </tr>
-    <tr>
-      <td>CSS3</td>
-      <td>ปานกลาง</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>ดี</td>
-    </tr>
-    <tr>
-      <td>React</td>
-      <td>ปานกลาง</td>
-    </tr>
-  </tbody>
-</table>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>ทักษะ</th>
+            <th>ระดับ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>ดี</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>ปานกลาง</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>ดี</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>ปานกลาง</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <!-- Portfolio Section -->
+      <!-- 2. Portfolio section -->
       <section id="portfolio">
         <h2>ผลงานของฉัน</h2>
-
+        <!-- - List of projects ใช้ <figure> และ <figcaption> -->
         <figure>
-          <img src="project1.png" alt="โปรเจกต์ 1" style="width: 30%;" />
+          <img src="image/project1.png" alt="โปรเจกต์ 1" style="width: 30%;" />
           <figcaption>โปรเจกต์เว็บร้านค้าออนไลน์ที่สร้างด้วย React</figcaption>
         </figure>
 
         <figure>
-          <img src="project2.png" alt="โปรเจกต์ 2" style="width: 30%;" />
+          <img src="image/project2.png" alt="โปรเจกต์ 2" style="width: 30%;" />
           <figcaption>โปรเจกต์แอปจัดการงานด้วย Vue.js</figcaption>
         </figure>
 
         <figure>
-          <img src="project3.png" alt="โปรเจกต์ 3" style="width: 30%;" />
+          <img src="image/project3.png" alt="โปรเจกต์ 3" style="width: 30%;" />
           <figcaption>โปรเจกต์บล็อกส่วนตัวที่พัฒนาด้วย WordPress</figcaption>
         </figure>
 
-      <!-- Contact Section -->
+      <!-- 3. Contact section -->
       <section id="contact">
+        <!-- - Contact form -->
         <h2>ติดต่อฉัน</h2>
         <form action="/contact" method="POST">
           <label for="name">ชื่อ:</label>
@@ -101,7 +118,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- TODO: สร้าง footer -->
     <footer>
       <p>© 2025 My Portfolio. All rights reserved.</p>
     </footer>
