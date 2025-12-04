@@ -17,9 +17,9 @@
       <section id="about">
         <h2>เกี่ยวกับฉัน</h2>
         <picture>
-          <source srcset="profile-small.jpg" media="(max-width: 600px)" />
-          <source srcset="profile-large.jpg" media="(min-width: 601px)" />
-          <img src="profile-large.jpg" alt="รูปภาพตัวเอง" />
+          <source srcset="cat.jpg" media="(max-width: 300px)" />
+          <source srcset="cat.jpg" media="(min-width: 301px)" />
+          <img src="cat.jpg" alt="รูปภาพตัวเอง" class="my-responsive-image" style="width: 20%;" />
         </picture>
         <p>
           สวัสดีค่ะ ฉันชื่อ นางสาวฟาร่า มิมมา เป็นนักศึกษาชั้นปีที่ 2
@@ -28,27 +28,8 @@
         </p>
       </section>
 
-      <!-- Portfolio Section -->
-      <section id="portfolio">
-        <h2>ผลงานของฉัน</h2>
-
-        <figure>
-          <img src="project1.png" alt="โปรเจกต์ 1" />
-          <figcaption>โปรเจกต์เว็บร้านค้าออนไลน์ที่สร้างด้วย React</figcaption>
-        </figure>
-
-        <figure>
-          <img src="project2.png" alt="โปรเจกต์ 2" />
-          <figcaption>โปรเจกต์แอปจัดการงานด้วย Vue.js</figcaption>
-        </figure>
-
-        <figure>
-          <img src="project3.png" alt="โปรเจกต์ 3" />
-          <figcaption>โปรเจกต์บล็อกส่วนตัวที่พัฒนาด้วย WordPress</figcaption>
-        </figure>
-
-        <!-- Skills Table -->
-<h3>ทักษะของฉัน</h3>
+      <!-- Skills Table -->
+      <h3>ทักษะของฉัน</h3>
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
     <tr>
@@ -76,25 +57,46 @@
   </tbody>
 </table>
 
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <h2>ผลงานของฉัน</h2>
+
+        <figure>
+          <img src="project1.png" alt="โปรเจกต์ 1" style="width: 30%;" />
+          <figcaption>โปรเจกต์เว็บร้านค้าออนไลน์ที่สร้างด้วย React</figcaption>
+        </figure>
+
+        <figure>
+          <img src="project2.png" alt="โปรเจกต์ 2" style="width: 30%;" />
+          <figcaption>โปรเจกต์แอปจัดการงานด้วย Vue.js</figcaption>
+        </figure>
+
+        <figure>
+          <img src="project3.png" alt="โปรเจกต์ 3" style="width: 30%;" />
+          <figcaption>โปรเจกต์บล็อกส่วนตัวที่พัฒนาด้วย WordPress</figcaption>
+        </figure>
+
       <!-- Contact Section -->
       <section id="contact">
         <h2>ติดต่อฉัน</h2>
-        <form action="/send-message" method="POST">
+        <form action="/contact" method="POST">
           <label for="name">ชื่อ:</label>
           <input type="text" id="name" name="name" required />
           <br />
-
           <label for="email">อีเมล:</label>
           <input type="email" id="email" name="email" required />
           <br />
-
           <label for="message">ข้อความ:</label>
           <br />
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
           <br />
-
-          <button type="submit">ส่งข้อความ</button>
-          <br />
+          <input type="submit" value="ส่งข้อความ" />
         </form>
       </section>
     </main>
